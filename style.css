@@ -1,9 +1,11 @@
 :root{
 --background-clr: rgb(31, 31, 31);
+--background-center-clr: rgb(35,35,35);
 --card-body-clr:black;
---card-text-clr:aliceblue;
+--text-clr-light:aliceblue;
 --image-width: 40vw;
 --form-width: 100%;
+--margins-right-container: 50px;
 }
 body{
     background-color: var(--background-clr);
@@ -29,7 +31,7 @@ body{
     width: var(--image-width);
     background: var(--card-body-clr);
     opacity: 0.6;
-    color:var(--card-text-clr);
+    color:var(--text-clr-light);
     top: 30vh;
     text-align: center;
     font-size: 1.5em;
@@ -40,5 +42,74 @@ body{
 #rightContainer{
     display: flex;
     flex-direction: column; 
-    margin: 50px;
+    color: var(--text-clr-light);
+}
+
+#topRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-clr);
+    width: 60vw;
+}
+.disclaimer{
+    color: greenyellow;
+}
+.description{
+    
+}
+.heading{
+    
+}
+#middleRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-center-clr);
+    width: 60vw;
+    box-shadow: 50px 50px 100px 1px lightblue;
+    z-index: 1;
+}
+form{
+    
+}
+.textbox{
+    width: 20vw;
+    margin-bottom: 10px;
+    background-color: var(--background-center-clr);
+    border-radius: 15px;
+}
+.textbox.input{
+    margin-top: 2px;
+    border: inset rgb(118, 118, 118) 2px;
+}
+#firstLastName{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+#contactInformation{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+#password{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+#bottomRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-clr);
+    width: 60vw;
+    height: 100%;
+}
+.signup{
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 175px;
+    background-color: rgb(2, 156, 245);
+    border: solid rgb(48, 65, 48) ;
+    border-radius: 15px;
+    color:black
+}
+.login{
+    
 }
