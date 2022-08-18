@@ -1,6 +1,8 @@
 :root{
 --background-clr: rgb(31, 31, 31);
---image-width: 100%;
+--card-body-clr:black;
+--card-text-clr:aliceblue;
+--image-width: 40vw;
 --form-width: 100%;
 }
 body{
@@ -13,11 +15,10 @@ body{
 }
 #leftContainer{
     display: flex;
-    position: static;
 }
 .card-image{
     position: relative;
-    width: 40vw;
+    width: var(--image-width);
     height: max(100vh, 850px);
     object-fit: cover;
     object-position: center top;
@@ -25,20 +26,19 @@ body{
 }
 .card-body{
     position: absolute;
-    width: 40vw;
-    background: black;
+    width: var(--image-width);
+    background: var(--card-body-clr);
     opacity: 0.6;
-    color: aliceblue;
+    color:var(--card-text-clr);
     top: 30vh;
     text-align: center;
-    font-size: min(2em, 3em);    
+    font-size: 1.5em;
+    overflow: hidden;
 }
 .card-heading{
 }
 #rightContainer{
-    margin: 50px;
     display: flex;
-    flex-direction: column;
-    position: static;
-    
+    flex-direction: column; 
+    margin: 50px;
 }
