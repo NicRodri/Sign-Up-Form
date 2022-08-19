@@ -24,9 +24,11 @@ body{
     height: max(100vh, 850px);
     object-fit: cover;
     object-position: center top;
-    z-index: -1;
+    z-index: 2;
 }
 .card-body{
+    display: flex;
+    justify-content: center;
     position: absolute;
     width: var(--image-width);
     background: var(--card-body-clr);
@@ -36,38 +38,35 @@ body{
     text-align: center;
     font-size: 1.5em;
     overflow: hidden;
+    z-index: 10;
+}
+.logo{
+    text-align: center;
+    width: 3.6em;
 }
 .card-heading{
+    margin-right: 35px;
 }
 #rightContainer{
     display: flex;
     flex-direction: column; 
     color: var(--text-clr-light);
+    width: 60vw;
 }
 
 #topRightContainer{
     padding: var(--margins-right-container);
     background-color: var(--background-clr);
-    width: 60vw;
 }
 .disclaimer{
     color: greenyellow;
 }
-.description{
-    
-}
-.heading{
-    
-}
+
 #middleRightContainer{
     padding: var(--margins-right-container);
     background-color: var(--background-center-clr);
-    width: 60vw;
-    box-shadow: 50px 50px 100px 1px lightblue;
+    box-shadow: 0px 0px 10px -0px lightblue;
     z-index: 1;
-}
-form{
-    
 }
 .textbox{
     width: 20vw;
@@ -78,6 +77,7 @@ form{
 .textbox.input{
     margin-top: 2px;
     border: inset rgb(118, 118, 118) 2px;
+    color: var(--text-clr-light);
 }
 #firstLastName{
     display: flex;
@@ -97,19 +97,17 @@ form{
 #bottomRightContainer{
     padding: var(--margins-right-container);
     background-color: var(--background-clr);
-    width: 60vw;
-    height: 100%;
 }
 .signup{
-    padding: 10px;
+    padding: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
-    width: 175px;
-    background-color: rgb(2, 156, 245);
+    width: 200px;
+    background-color: rgb(29, 129, 187);
     border: solid rgb(48, 65, 48) ;
     border-radius: 15px;
-    color:black
-}
-.login{
-    
+    color:rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bolder;
+
 }
