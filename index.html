@@ -31,33 +31,36 @@
                 <form action="http://httpbin.org/post" method="post">
                     <div id="firstLastName">
                         <div class="textbox">
-                            <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name" class="textbox input">
+                            <label id="name1" for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" class="textbox input" required>
                         </div>
                         <div class="textbox">
                             <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" class="textbox  input">
+                            <input type="text" name="last_name" id="last_name" class="textbox  input" required>
                         </div>
                     </div>
 
                     <div id="contactInformation">
                         <div class="textbox">
                             <label for="user_email">Email Address</label>
-                            <input type="email" name="user_email" id="user_email" placeholder="you@example.com" class="textbox  input">
+                            <input type="email" name="user_email" id="user_email" placeholder="you@example.com" class="textbox  input" required>
                         </div>
                         <div class="textbox">
                             <label for="phone_number">Phone Number</label>
-                            <input type="text" name="phone_number" id="phone_number" class="textbox  input">
+                            <input type="tel" name="phone_number" id="phone_number" class="textbox  input"
+                            placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required>
                         </div>
                     </div>
                     <div id="password">
                         <div class="textbox">
                             <label for="user_password">Password</label>
-                            <input type="password" name="user_password" id="user_password" class="textbox input error">
+                            <input type="password" name="user_password" id="user_password" class="textbox input error" required>
                         </div>
                         <div class="textbox">
                             <label for="user_password_confirm">Confirm Password</label>
-                            <input type="password" name="user_password_confirm" id="user_password_confirm" class="textbox input error">
+                            <input type="password" name="user_password_confirm" id="user_password_confirm" class="textbox input error" required>
                         </div>
                     </div>
             </div>
@@ -77,6 +80,6 @@
         </div>
     </div>
 
-
+<script src="javascript.js"></script> 
 </body>
 </html>
