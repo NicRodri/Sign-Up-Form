@@ -61,6 +61,9 @@ body{
     bottom: 0px; 
     z-index: 10;
 }
+.imageReference{
+    color: var(--text-clr-light);
+}
 #rightContainer{
     display: flex;
     flex-direction: column; 
@@ -131,4 +134,7 @@ input:focus{
     font-size: x-large;
     font-weight: bolder;
 
+}
+a{
+    color: greenyellow;
 }
