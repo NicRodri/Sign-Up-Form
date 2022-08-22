@@ -23,7 +23,7 @@ body{
     width: var(--image-width);
     height: max(100vh, 850px);
     object-fit: cover;
-    object-position: center top;
+    object-position: center bottom;
     z-index: 2;
 }
 .card-body{
