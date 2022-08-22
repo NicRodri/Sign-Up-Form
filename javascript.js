@@ -26,7 +26,7 @@ window.addEventListener("click", () =>{
     else{
         confirmPassWord.style.borderBottomColor = "rgb(118, 118, 118)";
         confirmPassWord.style.borderRightColor = "rgb(118, 118, 118)";
-
+        confirmPassWord.setCustomValidity("");
     }
 
     
