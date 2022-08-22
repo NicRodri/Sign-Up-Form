@@ -11,6 +11,7 @@ window.addEventListener("click", () =>{
     passwordValue = password.value;
     confirmPasswordValue = confirmPassWord.value;
     phoneNumberValue = phoneNumber.value;
+
     phoneNumberFiltered = myRegex.exec(phoneNumberValue);
 
     console.log(phoneNumberValue);
