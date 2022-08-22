@@ -23,6 +23,7 @@ body{
     width: var(--image-width);
     color: var(--text-clr-light);
     z-index: 10;
+    word-break: keep-all;
 }
 .card-image{
     display:flex;
@@ -55,12 +56,9 @@ body{
     margin-right: 35px;
 }
 .reference{
-    display: flex;
-    justify-content: center;
     position: absolute;
     width: var(--image-width);
-    bottom: 0px;
-
+    bottom: 0px; 
     z-index: 10;
 }
 #rightContainer{
@@ -74,18 +72,22 @@ body{
     padding: var(--margins-right-container);
     background-color: var(--background-clr);
 }
-.disclaimer{
-    color: greenyellow;
-}
-
 #middleRightContainer{
     padding: var(--margins-right-container);
     background-color: var(--background-center-clr);
     box-shadow: 0px 0px 10px -0px lightblue;
     z-index: 1;
 }
+#bottomRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-clr);
+}
+
+.disclaimer{
+    color: greenyellow;
+}
 .textbox{
-    width: 20vw;
+    width: 100%;
     margin-bottom: 10px;
     background-color: var(--background-center-clr);
     border-radius: 15px;
@@ -116,15 +118,12 @@ input:focus{
     flex-direction: row;
     gap: 5vw;
 }
-#bottomRightContainer{
-    padding: var(--margins-right-container);
-    background-color: var(--background-clr);
-}
+
 .signup{
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
-    width: 200px;
+    width: min(200px,100%);
     background-color: rgb(29, 129, 187);
     border: solid rgb(48, 65, 48) ;
     border-radius: 15px;
