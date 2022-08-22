@@ -7,6 +7,10 @@
 --form-width: 100%;
 --margins-right-container: 50px;
 }
+@font-face {
+    font-family: Norse-Bold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
 body{
     background-color: var(--background-clr);
     margin: 0;
@@ -45,6 +49,7 @@ body{
     top: 30vh;
     text-align: center;
     font-size: 1.5em;
+    font-family: Norse-Bold;
     overflow: hidden;
     z-index: 10;
 }
